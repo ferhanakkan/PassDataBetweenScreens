@@ -16,6 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxd-4R-MME">
+                                <rect key="frame" x="126" y="487" width="151" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="pass data with Bundle"/>
+                                <connections>
+                                    <action selector="bundleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUh-mZ-KH5"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zI-XK-hzp">
                                 <rect key="frame" x="135" y="330" width="145" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -32,12 +40,12 @@
                                     <action selector="programmaticButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UZ7-49-Sbd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxd-4R-MME">
-                                <rect key="frame" x="126" y="487" width="151" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Py-sm-7AQ">
+                                <rect key="frame" x="145" y="724" width="126" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="pass data with Bundle"/>
+                                <state key="normal" title="pass data with Xib"/>
                                 <connections>
-                                    <action selector="bundleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUh-mZ-KH5"/>
+                                    <action selector="xibButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fp6-Ma-gIl"/>
                                 </connections>
                             </button>
                         </subviews>

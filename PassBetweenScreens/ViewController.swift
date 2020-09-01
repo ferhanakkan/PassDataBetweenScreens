@@ -6,8 +6,8 @@
 //
 
 public extension UIStoryboard {
-
-    static var main: UIStoryboard {
+    
+    static var myStoryboardName: UIStoryboard {
         return UIStoryboard(name: "Main", bundle: .main)
     }
 }
@@ -20,11 +20,11 @@ class ViewController: UIViewController {
     // Segue icin kullanilan kisimdir. Diger kisimlar icin gerekmemektedir.
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "segueID"{
-    let vc = segue.destination as! SegueViewController
-        vc.name = "Segue Ferhan"
-        vc.surname = "Segue Akkan"
-    }}
+        if segue.identifier == "segueID"{
+            let vc = segue.destination as! SegueViewController
+            vc.name = "Segue Ferhan"
+            vc.surname = "Segue Akkan"
+        }}
     
     
     @IBAction func segueButtonPressed(_ sender: Any) {
@@ -32,23 +32,30 @@ class ViewController: UIViewController {
         // Diger yollardaki gibi present etmek icin ayri bi segue cizmek gerekmektedir.
     }
     
-    
     @IBAction func bundleButtonPressed(_ sender: Any) {
-        
-        let vc = UIStoryboard.main.instantiateViewController(identifier: "bundleTest") as! BundleViewController
+        let vc = UIStoryboard.myStoryboardName.instantiateViewController(identifier: "bundleTest") as! BundleViewController
         vc.name = "Bundle Ferhan"
         vc.surname = "Bundle Akkan"
-//        show(vc, sender: nil)
-        present(vc, animated: true)
+        show(vc, sender: nil)
+        //        present(vc, animated: true)
     }
     
     
     @IBAction func programmaticButtonPressed(_ sender: Any) {
         let vc = ProgrammaticallyViewController()
-        vc.name = "Ferhan"
-        vc.surname = "Akkan"
-//        show(vc, sender: nil)
-                present(vc, animated: true)
+        vc.name = "Program Ferhan"
+        vc.surname = "Progra Akkan"
+        show(vc, sender: nil)
+        //        present(vc, animated: true)
+    }
+    
+    @IBAction func xibButtonPressed(_ sender: Any) {
+        if let vc = Bundle.main.loadNibNamed("XibExampleView", owner: self, options: nil)?.first as? XibViewController {
+            vc.name = "Xib Ferhan"
+            vc.surname = "Xib Akkan"
+            show(vc, sender: nil)
+            //        present(vc, animated: true)
+        }
     }
     
 }
