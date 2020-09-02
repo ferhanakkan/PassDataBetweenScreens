@@ -33,9 +33,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func bundleButtonPressed(_ sender: Any) {
-        let vc = UIStoryboard.myStoryboardName.instantiateViewController(identifier: "bundleTest") as! BundleViewController
-        vc.name = "Bundle Ferhan"
-        vc.surname = "Bundle Akkan"
+        let vc = UIStoryboard.myStoryboardName.instantiateViewController(identifier: "storyboardID") as! BundleViewController
+        vc.name = "storyboardID Ferhan"
+        vc.surname = "storyboardID Akkan"
         show(vc, sender: nil)
         //        present(vc, animated: true)
     }

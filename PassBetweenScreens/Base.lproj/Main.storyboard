@@ -64,7 +64,7 @@
         <!--Bundle View Controller-->
         <scene sceneID="tcK-u2-akG">
             <objects>
-                <viewController storyboardIdentifier="bundleTest" id="8e1-ym-cTj" customClass="BundleViewController" customModule="PassBetweenScreens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="storyboardID" id="8e1-ym-cTj" customClass="BundleViewController" customModule="PassBetweenScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vh1-5B-y2c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
