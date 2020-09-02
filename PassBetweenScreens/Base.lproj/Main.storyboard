@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="pass data with Bundle"/>
                                 <connections>
-                                    <action selector="bundleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUh-mZ-KH5"/>
+                                    <action selector="storyboardIDButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUh-mZ-KH5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zI-XK-hzp">

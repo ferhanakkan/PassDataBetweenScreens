@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         // Diger yollardaki gibi present etmek icin ayri bi segue cizmek gerekmektedir.
     }
     
-    @IBAction func bundleButtonPressed(_ sender: Any) {
+    @IBAction func storyboardIDButtonPressed(_ sender: Any) {
         let vc = UIStoryboard.myStoryboardName.instantiateViewController(identifier: "storyboardID") as! BundleViewController
         vc.name = "storyboardID Ferhan"
         vc.surname = "storyboardID Akkan"
