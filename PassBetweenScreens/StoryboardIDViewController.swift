@@ -1,5 +1,5 @@
 //
-//  BundleViewController.swift
+//  StoryboardIDViewController.swift
 //  PassBetweenScreens
 //
 //  Created by Ferhan Akkan on 2.09.2020.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BundleViewController: UIViewController {
+class StoryboardIDViewController: UIViewController {
     
     var name = ""
     var surname = ""

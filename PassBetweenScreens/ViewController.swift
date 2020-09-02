@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func storyboardIDButtonPressed(_ sender: Any) {
-        let vc = UIStoryboard.myStoryboardName.instantiateViewController(identifier: "storyboardID") as! BundleViewController
+        let vc = UIStoryboard.myStoryboardName.instantiateViewController(identifier: "storyboardID") as! StoryboardIDViewController
         vc.name = "storyboardID Ferhan"
         vc.surname = "storyboardID Akkan"
         show(vc, sender: nil)
